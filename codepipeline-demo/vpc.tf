@@ -13,8 +13,6 @@ module "vpc" {
   enable_vpn_gateway = false
 
   tags = {
-    "Name"                                      = "terraform-eks-demo-node"
-    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
+    "Name" = "terraform-cloudpipeline-demo"
   }
 }
-
